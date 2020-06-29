@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Survey Forms</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anaheim&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="backdrop">
+    <h1 class="heading1">Application For Permission To Date My Daughter</h1>
+    <p class="note"><b>Note:</b> Form is to be completed at least 21 days prior to date</p>
+    <form class="form1">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <div class="name-input">
+          <label for="name">Name:</label>
+          <input type="text" name="name" placeholder="Enter name here" required>
+        </div>
+        <div class="address-input">
+          <label for="address">Address:</label>
+          <input type="text" name="address" placeholder="Enter address here" required>
+        </div>
+        <div class="email-input">
+          <label for="email">Email:</label>
+          <input type="email" name="email" placeholder="Enter Email here" required>
+        </div>
+        <div class="ph-input">
+          <label for="phone">Phone Number:</label>
+          <input type="text" name="phone" placeholder="Enter 10 digit number" required min="1" max="10">
+        </div>
+        <div class="iq-input">
+          <label for="iq">IQ:</label>
+          <input type="text" name="iq" placeholder="Enter IQ here" required>
+        </div>
+        <div class="gender-input">
+          <label for="gender">Gender:</label><br>
+          <input type="radio" name="gender" value="Male"> Male <br>
+          <input type="radio" name="gender" value="Female"> Female <br>
+          <input type="radio" name="gender" value="Other"> Other <br>
+        </div>
+        <div class="date-input">
+          <label for="date-input">Date of proposed outing:</label>
+          <input type="date" name="date-input">
+        </div>
+      </fieldset>
+    </form>
+    <form class="form2">
+      <fieldset>
+        <label for="check">Check All That Apply</label><br>
+        <input type="checkbox" name="check" value="I have tattoos and/or piercings"> I have tattoos and/or piercings <br>
+        <input type="checkbox" name="check" value="I am more than 2 years older than my daughter"> I am more than 2 years older than my daughter <br>
+        <input type="checkbox" name="check" value="Is the date at a well lit public location"> Is the date at a well lit public location<br>
+        <input type="checkbox" name="check" value="I work full-time"> I work full-time <br>
+        <input type="checkbox" name="check" value="My parents are rich"> My parents are rich <br>
+      </fieldset>
+    </form>
+    <form class="form3">
+      <fieldset>
+        <label for="persuasion">Political persuasion</label>
+        <select class="persuasion" name="persuasion">
+          <option value="">Left-wing</option>
+          <option value="">Right-wing</option>
+          <option value="">Conservative</option>
+          <option value="">Nazi</option>
+        </select>
+        <label for="education">Education Level Completed</label>
+        <select class="education" name="education">
+          <option value="">University</option>
+          <option value="">College</option>
+          <option value="">High School</option>
+          <option value="">None</option>
+        </select>
+      </fieldset>
+    </form>
+    <form class="form4">
+      <fieldset>
+        <legend class="essay">Essay Section</legend>
+        <label class="explain" for="essay">In 50 words or more explain why you want to date my daughter:</label><br>
+        <textarea name="essay" rows="5" cols="50" placeholder="Enter text here"></textarea><br>
+        <div class="ref">
+          <label for="references">Please upload contact details for 2 references:</label><br>
+          <textarea name="references" rows="5" cols="50" placeholder="Enter text here"></textarea>
+        </div>
+        <div class="upload">
+          <label for="upload">Upload Police Clearance Certificate, Bank Statement and Medical Certifiates here: </label>
+        </div>
+        <button class="attach" type="button" name="button">Attach files</button>
+      </fieldset>
+    </form>
+    <fieldset class="submit-cl">
+      <form>
+        <a class="submit" href="mailto:gopinath.padmanaban?subject=feedback">Email me</a>
+      </form>
+    </fieldset>
+  </div>
+</body>
+
+</html>
